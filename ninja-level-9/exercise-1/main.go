@@ -27,9 +27,11 @@ func printEvens(a []int) {
 
 func main() {
 	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	wg.Add(1)
+
+	// We are adding 2 goroutines
+	wg.Add(2)
+
 	go printOdds(numbers)
-	wg.Add(1)
 	go printEvens(numbers)
 	wg.Wait()
 }
