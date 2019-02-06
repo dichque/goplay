@@ -24,7 +24,7 @@ func main() {
 	// a = b
 
 	// We are converting b to int type
-	// In other langugage it is called casting, but not in GO
+	// In other language it is called casting, but not in GO
 	// https://golang.org/ref/spec#Conversions
 	a = int(b)
 	fmt.Println(a)
